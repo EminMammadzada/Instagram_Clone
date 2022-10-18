@@ -11,7 +11,7 @@
         <!--Login View Controller-->
         <scene sceneID="1f9-T7-UmL">
             <objects>
-                <viewController id="E2P-MX-hFO" customClass="LoginViewController" customModule="instagram_clone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="E2P-MX-hFO" customClass="LoginViewController" customModule="instagram_clone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N19-mc-4Em">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -123,7 +123,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PosterViewCell" rowHeight="311" id="Cii-i5-x6l" customClass="PosterViewCell" customModule="instagram_clone" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="PosterViewCell" rowHeight="311" id="Cii-i5-x6l" customClass="PosterViewCell" customModule="instagram_clone" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="50" width="390" height="311"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Cii-i5-x6l" id="p7S-9Q-dBg">
@@ -170,6 +170,11 @@
                         </prototypes>
                     </tableView>
                     <navigationItem key="navigationItem" id="Scs-mo-PKk">
+                        <barButtonItem key="leftBarButtonItem" title="Log out" id="rzQ-GS-4I4">
+                            <connections>
+                                <action selector="onLogout:" destination="BYZ-38-t0r" id="bRl-RT-imh"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="insta_camera_btn" id="dBm-Bc-vnM">
                             <connections>
                                 <segue destination="NQ9-BR-Rds" kind="presentation" modalPresentationStyle="fullScreen" id="6l0-Oj-dEx"/>
@@ -251,7 +256,7 @@
         <!--Navigation Controller-->
         <scene sceneID="pmX-7f-rCf">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BX0-FE-dwF" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="FeedNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="BX0-FE-dwF" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="r8o-WO-dUS">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
