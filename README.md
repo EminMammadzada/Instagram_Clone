@@ -16,9 +16,14 @@ The following **required** functionality is completed:
 
 ## Video Walkthrough
 
-Here's a walkthrough of staying logged in and logging out
+Here's a walkthrough of logging out
 
 <img src='https://media.giphy.com/media/PuCBD97jaFepVJ1Au8/giphy.gif' />
+
+
+Here's a walkthrough of staying logged in
+
+<img src='https://media.giphy.com/media/XzffuffrgZ1mY2iwWe/giphy.gif' />
 
 
 Here's a walkthrough of viewing and adding comments on a post
